@@ -1,0 +1,9 @@
+build/
+Examples/Demo/build
+ROAnnotation/
+ROAnnotation.xcodeproj/xcuserdata
+ROAnnotation.xcodeproj/project.xcworkspace/xcshareddata
+ROAnnotation.xcodeproj/project.xcworkspace/xcuserdata
+Examples/Demo/ROAnnotationDemo.xcodeproj/project.xcworkspace/xcuserdata
+Examples/Demo/ROAnnotationDemo.xcodeproj/xcuserdata
+Examples/Demo/ROAnnotationDemo.xcodeproj/project.xcworkspace/xcshareddata

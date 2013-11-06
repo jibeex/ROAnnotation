@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		122DF574180E976700D56AD0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 122DF544180E946800D56AD0 /* XCTest.framework */; };
+		122DF57A180E976700D56AD0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 122DF578180E976700D56AD0 /* InfoPlist.strings */; };
+		122DF57C180E976700D56AD0 /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 122DF57B180E976700D56AD0 /* Tests.m */; };
+		122DF58A180E97BE00D56AD0 /* CustomizedAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 122DF585180E97BE00D56AD0 /* CustomizedAnnotation.m */; };
+		122DF58C180E97BE00D56AD0 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 122DF589180E97BE00D56AD0 /* Person.m */; };
+		122DF58D180E97D100D56AD0 /* ROClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1271CC3716BACC6A008C44DF /* ROClassInfo.m */; };
+		122DF58E180E97D100D56AD0 /* ROAnnotatedUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1271CC3916BACC6A008C44DF /* ROAnnotatedUnit.m */; };
+		122DF58F180E97D100D56AD0 /* ROAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1271CC3C16BACC6A008C44DF /* ROAnnotation.m */; };
+		1262C0A61811868500166755 /* ClassAnnotationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1262C0A51811868500166755 /* ClassAnnotationTest.m */; };
+		1262C0A818118A1800166755 /* MethodAnnotationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1262C0A718118A1800166755 /* MethodAnnotationTest.m */; };
+		1262C0AA18118A3A00166755 /* PropertyAnnotationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1262C0A918118A3A00166755 /* PropertyAnnotationTest.m */; };
+		1262C0AD18118EA800166755 /* ROAnnotationData in Resources */ = {isa = PBXBuildFile; fileRef = 1262C0AC18118EA800166755 /* ROAnnotationData */; };
+		1262C0AF18118EEF00166755 /* ROAnnotationData in Resources */ = {isa = PBXBuildFile; fileRef = 1262C0AC18118EA800166755 /* ROAnnotationData */; };
+		1271CC3D16BACC6A008C44DF /* ROClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1271CC3716BACC6A008C44DF /* ROClassInfo.m */; };
+		1271CC3E16BACC6A008C44DF /* ROAnnotatedUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1271CC3916BACC6A008C44DF /* ROAnnotatedUnit.m */; };
+		1271CC3F16BACC6A008C44DF /* ROAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1271CC3C16BACC6A008C44DF /* ROAnnotation.m */; };
+		1296B0B416BAA6AA00D2B4C4 /* AnnotationParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1296B0B316BAA6A900D2B4C4 /* AnnotationParser.m */; };
+		1775661E112F3A6000842030 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1775661D112F3A6000842030 /* libicucore.dylib */; };
+		17791D281129D5FC00FFC314 /* PathProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 17791D271129D5FC00FFC314 /* PathProcessor.m */; };
+		8DD76F9A0486AA7600D96B5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		122DF57E180E976700D56AD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DD76F960486AA7600D96B5E;
+			remoteInfo = ROAnnotation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08FB7796FE84155DC02AAC07 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		08FB779EFE84155DC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		122DF544180E946800D56AD0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		122DF546180E946800D56AD0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		122DF548180E946800D56AD0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		122DF573180E976700D56AD0 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		122DF577180E976700D56AD0 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		122DF579180E976700D56AD0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		122DF57B180E976700D56AD0 /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
+		122DF57D180E976700D56AD0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		122DF584180E97BE00D56AD0 /* CustomizedAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomizedAnnotation.h; sourceTree = "<group>"; };
+		122DF585180E97BE00D56AD0 /* CustomizedAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomizedAnnotation.m; sourceTree = "<group>"; };
+		122DF588180E97BE00D56AD0 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		122DF589180E97BE00D56AD0 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		1262C0A51811868500166755 /* ClassAnnotationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassAnnotationTest.m; sourceTree = "<group>"; };
+		1262C0A718118A1800166755 /* MethodAnnotationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodAnnotationTest.m; sourceTree = "<group>"; };
+		1262C0A918118A3A00166755 /* PropertyAnnotationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyAnnotationTest.m; sourceTree = "<group>"; };
+		1262C0AC18118EA800166755 /* ROAnnotationData */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = ROAnnotationData; path = Tests/classesToParse/meta/ROAnnotationData; sourceTree = SOURCE_ROOT; };
+		1271CC3616BACC6A008C44DF /* ROClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ROClassInfo.h; path = filesNeededForReadingAnnotationsOnly/ROClassInfo.h; sourceTree = "<group>"; };
+		1271CC3716BACC6A008C44DF /* ROClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ROClassInfo.m; path = filesNeededForReadingAnnotationsOnly/ROClassInfo.m; sourceTree = "<group>"; };
+		1271CC3816BACC6A008C44DF /* ROAnnotatedUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ROAnnotatedUnit.h; path = filesNeededForReadingAnnotationsOnly/ROAnnotatedUnit.h; sourceTree = "<group>"; };
+		1271CC3916BACC6A008C44DF /* ROAnnotatedUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ROAnnotatedUnit.m; path = filesNeededForReadingAnnotationsOnly/ROAnnotatedUnit.m; sourceTree = "<group>"; };
+		1271CC3B16BACC6A008C44DF /* ROAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ROAnnotation.h; path = filesNeededForReadingAnnotationsOnly/ROAnnotation.h; sourceTree = "<group>"; };
+		1271CC3C16BACC6A008C44DF /* ROAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ROAnnotation.m; path = filesNeededForReadingAnnotationsOnly/ROAnnotation.m; sourceTree = "<group>"; };
+		1296B0B216BAA6A900D2B4C4 /* AnnotationParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnotationParser.h; sourceTree = "<group>"; };
+		1296B0B316BAA6A900D2B4C4 /* AnnotationParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnotationParser.m; sourceTree = "<group>"; };
+		1775661D112F3A6000842030 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		17791D261129D5FC00FFC314 /* PathProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathProcessor.h; sourceTree = "<group>"; };
+		17791D271129D5FC00FFC314 /* PathProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathProcessor.m; sourceTree = "<group>"; };
+		608B04FE1809C85900EDB791 /* ROAnnotation_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROAnnotation_Prefix.pch; sourceTree = "<group>"; };
+		8DD76FA10486AA7600D96B5E /* ROAnnotation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ROAnnotation; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6859EA3029092ED04C91782 /* ObjCAnnotate.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ObjCAnnotate.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		122DF570180E976700D56AD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				122DF574180E976700D56AD0 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DD76F9B0486AA7600D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */,
+				1775661E112F3A6000842030 /* libicucore.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* ObjCAnnotate */ = {
+			isa = PBXGroup;
+			children = (
+				17791D251129D5C200FFC314 /* Classes */,
+				122DF575180E976700D56AD0 /* Tests */,
+				17756615112F39B800842030 /* Frameworks */,
+				08FB7795FE84155DC02AAC07 /* Source */,
+				C6859EA2029092E104C91782 /* Documentation */,
+				08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+				1775661D112F3A6000842030 /* libicucore.dylib */,
+			);
+			name = ObjCAnnotate;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				608B04FE1809C85900EDB791 /* ROAnnotation_Prefix.pch */,
+				08FB7796FE84155DC02AAC07 /* main.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				08FB779EFE84155DC02AAC07 /* Foundation.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		122DF575180E976700D56AD0 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1262C0AC18118EA800166755 /* ROAnnotationData */,
+				122DF583180E97BE00D56AD0 /* classesToParse */,
+				122DF57B180E976700D56AD0 /* Tests.m */,
+				122DF576180E976700D56AD0 /* Supporting Files */,
+				1262C0A51811868500166755 /* ClassAnnotationTest.m */,
+				1262C0A718118A1800166755 /* MethodAnnotationTest.m */,
+				1262C0A918118A3A00166755 /* PropertyAnnotationTest.m */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		122DF576180E976700D56AD0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				122DF577180E976700D56AD0 /* Tests-Info.plist */,
+				122DF578180E976700D56AD0 /* InfoPlist.strings */,
+				122DF57D180E976700D56AD0 /* Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		122DF583180E97BE00D56AD0 /* classesToParse */ = {
+			isa = PBXGroup;
+			children = (
+				122DF584180E97BE00D56AD0 /* CustomizedAnnotation.h */,
+				122DF585180E97BE00D56AD0 /* CustomizedAnnotation.m */,
+				122DF588180E97BE00D56AD0 /* Person.h */,
+				122DF589180E97BE00D56AD0 /* Person.m */,
+			);
+			path = classesToParse;
+			sourceTree = "<group>";
+		};
+		1271CC3516BACC3D008C44DF /* filesNeededForReadingAnnotationsOnly */ = {
+			isa = PBXGroup;
+			children = (
+				1271CC3616BACC6A008C44DF /* ROClassInfo.h */,
+				1271CC3716BACC6A008C44DF /* ROClassInfo.m */,
+				1271CC3816BACC6A008C44DF /* ROAnnotatedUnit.h */,
+				1271CC3916BACC6A008C44DF /* ROAnnotatedUnit.m */,
+				1271CC3B16BACC6A008C44DF /* ROAnnotation.h */,
+				1271CC3C16BACC6A008C44DF /* ROAnnotation.m */,
+			);
+			name = filesNeededForReadingAnnotationsOnly;
+			sourceTree = "<group>";
+		};
+		17756615112F39B800842030 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				122DF544180E946800D56AD0 /* XCTest.framework */,
+				122DF546180E946800D56AD0 /* Foundation.framework */,
+				122DF548180E946800D56AD0 /* UIKit.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		17791D251129D5C200FFC314 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1271CC3516BACC3D008C44DF /* filesNeededForReadingAnnotationsOnly */,
+				17791D261129D5FC00FFC314 /* PathProcessor.h */,
+				17791D271129D5FC00FFC314 /* PathProcessor.m */,
+				1296B0B216BAA6A900D2B4C4 /* AnnotationParser.h */,
+				1296B0B316BAA6A900D2B4C4 /* AnnotationParser.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76FA10486AA7600D96B5E /* ROAnnotation */,
+				122DF573180E976700D56AD0 /* Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6859EA2029092E104C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				C6859EA3029092ED04C91782 /* ObjCAnnotate.1 */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		122DF572180E976700D56AD0 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 122DF580180E976700D56AD0 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				122DF56F180E976700D56AD0 /* Sources */,
+				122DF570180E976700D56AD0 /* Frameworks */,
+				122DF571180E976700D56AD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				122DF57F180E976700D56AD0 /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = 122DF573180E976700D56AD0 /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8DD76F960486AA7600D96B5E /* ROAnnotation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB927408733DD40010E9CD /* Build configuration list for PBXNativeTarget "ROAnnotation" */;
+			buildPhases = (
+				8DD76F990486AA7600D96B5E /* Sources */,
+				1262C0AE18118EE900166755 /* Resources */,
+				8DD76F9B0486AA7600D96B5E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ROAnnotation;
+			productInstallPath = "$(HOME)/bin";
+			productName = ObjCAnnotate;
+			productReference = 8DD76FA10486AA7600D96B5E /* ROAnnotation */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				TargetAttributes = {
+					122DF572180E976700D56AD0 = {
+						TestTargetID = 8DD76F960486AA7600D96B5E;
+					};
+				};
+			};
+			buildConfigurationList = 1DEB927808733DD40010E9CD /* Build configuration list for PBXProject "ROAnnotation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* ObjCAnnotate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DD76F960486AA7600D96B5E /* ROAnnotation */,
+				122DF572180E976700D56AD0 /* Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		122DF571180E976700D56AD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1262C0AD18118EA800166755 /* ROAnnotationData in Resources */,
+				122DF57A180E976700D56AD0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1262C0AE18118EE900166755 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1262C0AF18118EEF00166755 /* ROAnnotationData in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		122DF56F180E976700D56AD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				122DF58C180E97BE00D56AD0 /* Person.m in Sources */,
+				1262C0A61811868500166755 /* ClassAnnotationTest.m in Sources */,
+				122DF58F180E97D100D56AD0 /* ROAnnotation.m in Sources */,
+				122DF57C180E976700D56AD0 /* Tests.m in Sources */,
+				1262C0AA18118A3A00166755 /* PropertyAnnotationTest.m in Sources */,
+				122DF58A180E97BE00D56AD0 /* CustomizedAnnotation.m in Sources */,
+				1262C0A818118A1800166755 /* MethodAnnotationTest.m in Sources */,
+				122DF58D180E97D100D56AD0 /* ROClassInfo.m in Sources */,
+				122DF58E180E97D100D56AD0 /* ROAnnotatedUnit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DD76F990486AA7600D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DD76F9A0486AA7600D96B5E /* main.m in Sources */,
+				17791D281129D5FC00FFC314 /* PathProcessor.m in Sources */,
+				1296B0B416BAA6AA00D2B4C4 /* AnnotationParser.m in Sources */,
+				1271CC3D16BACC6A008C44DF /* ROClassInfo.m in Sources */,
+				1271CC3E16BACC6A008C44DF /* ROAnnotatedUnit.m in Sources */,
+				1271CC3F16BACC6A008C44DF /* ROAnnotation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		122DF57F180E976700D56AD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DD76F960486AA7600D96B5E /* ROAnnotation */;
+			targetProxy = 122DF57E180E976700D56AD0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		122DF578180E976700D56AD0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				122DF579180E976700D56AD0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		122DF581180E976700D56AD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		122DF582180E976700D56AD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		1DEB927508733DD40010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ROAnnotation_Prefix.pch;
+				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = ROAnnotation;
+				SDKROOT = macosx;
+				SYMROOT = build;
+			};
+			name = Debug;
+		};
+		1DEB927608733DD40010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ROAnnotation_Prefix.pch;
+				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = ROAnnotation;
+				SDKROOT = macosx;
+				SYMROOT = build;
+			};
+			name = Release;
+		};
+		1DEB927908733DD40010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SYMROOT = build;
+			};
+			name = Debug;
+		};
+		1DEB927A08733DD40010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+				SYMROOT = build;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		122DF580180E976700D56AD0 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				122DF581180E976700D56AD0 /* Debug */,
+				122DF582180E976700D56AD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB927408733DD40010E9CD /* Build configuration list for PBXNativeTarget "ROAnnotation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB927508733DD40010E9CD /* Debug */,
+				1DEB927608733DD40010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB927808733DD40010E9CD /* Build configuration list for PBXProject "ROAnnotation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB927908733DD40010E9CD /* Debug */,
+				1DEB927A08733DD40010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

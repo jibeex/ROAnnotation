@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		608B05151809E4BB00EDB791 /* ROAnnotation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 608B05161809E4BB00EDB791 /* Build configuration list for PBXAggregateTarget "ROAnnotation" */;
+			buildPhases = (
+				608B05191809E64500EDB791 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = ROAnnotation;
+			productName = OCAnnotation;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1210CD92180D2F980062394F /* CustomizedAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1210CD91180D2F980062394F /* CustomizedAnnotation.m */; };
+		123809E5167245B9009DC14C /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 123809E4167245B9009DC14C /* libicucore.dylib */; };
+		17ADF8B211248403003DAB18 /* AnnotateDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17ADF8AD11248403003DAB18 /* AnnotateDemoAppDelegate.m */; };
+		17ADF8B411248403003DAB18 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 17ADF8B111248403003DAB18 /* Person.m */; };
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		6003AE79180B17A700BD58CD /* ROAnnotatedUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003AE70180B17A700BD58CD /* ROAnnotatedUnit.m */; };
+		6003AE7A180B17A700BD58CD /* ROAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003AE72180B17A700BD58CD /* ROAnnotation.m */; };
+		6003AE7B180B17A700BD58CD /* ROClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003AE75180B17A700BD58CD /* ROClassInfo.m */; };
+		6003AE8A180B193C00BD58CD /* ROAnnotationData in Resources */ = {isa = PBXBuildFile; fileRef = 6003AE89180B193C00BD58CD /* ROAnnotationData */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		608B051A1809E66600EDB791 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 608B05151809E4BB00EDB791;
+			remoteInfo = OCAnnotation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		1210CD90180D2F980062394F /* CustomizedAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomizedAnnotation.h; sourceTree = "<group>"; };
+		1210CD91180D2F980062394F /* CustomizedAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomizedAnnotation.m; sourceTree = "<group>"; };
+		123809E4167245B9009DC14C /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/libicucore.dylib; sourceTree = DEVELOPER_DIR; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		17ADF8AC11248403003DAB18 /* AnnotateDemoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnotateDemoAppDelegate.h; sourceTree = "<group>"; };
+		17ADF8AD11248403003DAB18 /* AnnotateDemoAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnotateDemoAppDelegate.m; sourceTree = "<group>"; };
+		17ADF8B011248403003DAB18 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		17ADF8B111248403003DAB18 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		6003AE6F180B17A700BD58CD /* ROAnnotatedUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROAnnotatedUnit.h; sourceTree = "<group>"; };
+		6003AE70180B17A700BD58CD /* ROAnnotatedUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROAnnotatedUnit.m; sourceTree = "<group>"; };
+		6003AE71180B17A700BD58CD /* ROAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROAnnotation.h; sourceTree = "<group>"; };
+		6003AE72180B17A700BD58CD /* ROAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROAnnotation.m; sourceTree = "<group>"; };
+		6003AE74180B17A700BD58CD /* ROClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROClassInfo.h; sourceTree = "<group>"; };
+		6003AE75180B17A700BD58CD /* ROClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROClassInfo.m; sourceTree = "<group>"; };
+		6003AE87180B18F700BD58CD /* ROAnnotationDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ROAnnotationDemo-Info.plist"; sourceTree = "<group>"; };
+		6003AE89180B193C00BD58CD /* ROAnnotationData */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ROAnnotationData; sourceTree = "<group>"; };
+		608B05141809E24F00EDB791 /* ROAnnotationDemo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROAnnotationDemo_Prefix.pch; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* ROAnnotationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ROAnnotationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				123809E5167245B9009DC14C /* libicucore.dylib in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		1238092A16723C09009DC14C /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				6003AE6B180B17A700BD58CD /* ROAnnotation */,
+			);
+			name = vendor;
+			sourceTree = "<group>";
+		};
+		12380A24167255A3009DC14C /* meta */ = {
+			isa = PBXGroup;
+			children = (
+				6003AE89180B193C00BD58CD /* ROAnnotationData */,
+			);
+			name = meta;
+			path = Classes/meta;
+			sourceTree = "<group>";
+		};
+		17ADF8AB11248403003DAB18 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				17ADF8AC11248403003DAB18 /* AnnotateDemoAppDelegate.h */,
+				17ADF8AD11248403003DAB18 /* AnnotateDemoAppDelegate.m */,
+				17ADF8B011248403003DAB18 /* Person.h */,
+				17ADF8B111248403003DAB18 /* Person.m */,
+				1210CD90180D2F980062394F /* CustomizedAnnotation.h */,
+				1210CD91180D2F980062394F /* CustomizedAnnotation.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* ROAnnotationDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* AnnotateDemo */ = {
+			isa = PBXGroup;
+			children = (
+				12380A24167255A3009DC14C /* meta */,
+				17ADF8AB11248403003DAB18 /* Classes */,
+				1238092A16723C09009DC14C /* vendor */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = AnnotateDemo;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				6003AE87180B18F700BD58CD /* ROAnnotationDemo-Info.plist */,
+				608B05141809E24F00EDB791 /* ROAnnotationDemo_Prefix.pch */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				123809E4167245B9009DC14C /* libicucore.dylib */,
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6003AE6B180B17A700BD58CD /* ROAnnotation */ = {
+			isa = PBXGroup;
+			children = (
+				6003AE6E180B17A700BD58CD /* filesNeededForReadingAnnotationsOnly */,
+			);
+			name = ROAnnotation;
+			path = ../../Classes;
+			sourceTree = "<group>";
+		};
+		6003AE6E180B17A700BD58CD /* filesNeededForReadingAnnotationsOnly */ = {
+			isa = PBXGroup;
+			children = (
+				6003AE6F180B17A700BD58CD /* ROAnnotatedUnit.h */,
+				6003AE70180B17A700BD58CD /* ROAnnotatedUnit.m */,
+				6003AE71180B17A700BD58CD /* ROAnnotation.h */,
+				6003AE72180B17A700BD58CD /* ROAnnotation.m */,
+				6003AE74180B17A700BD58CD /* ROClassInfo.h */,
+				6003AE75180B17A700BD58CD /* ROClassInfo.m */,
+			);
+			path = filesNeededForReadingAnnotationsOnly;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* ROAnnotationDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "ROAnnotationDemo" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				608B051B1809E66600EDB791 /* PBXTargetDependency */,
+			);
+			name = ROAnnotationDemo;
+			productInstallPath = "$(HOME)/Applications";
+			productName = AnnotateDemo;
+			productReference = 8D1107320486CEB800E47090 /* ROAnnotationDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ROAnnotationDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* AnnotateDemo */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* ROAnnotationDemo */,
+				608B05151809E4BB00EDB791 /* ROAnnotation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				6003AE8A180B193C00BD58CD /* ROAnnotationData in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		608B05191809E64500EDB791 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "../../ROAnnotation Classes Classes/meta";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				6003AE7A180B17A700BD58CD /* ROAnnotation.m in Sources */,
+				1210CD92180D2F980062394F /* CustomizedAnnotation.m in Sources */,
+				6003AE7B180B17A700BD58CD /* ROClassInfo.m in Sources */,
+				17ADF8B211248403003DAB18 /* AnnotateDemoAppDelegate.m in Sources */,
+				17ADF8B411248403003DAB18 /* Person.m in Sources */,
+				6003AE79180B17A700BD58CD /* ROAnnotatedUnit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		608B051B1809E66600EDB791 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 608B05151809E4BB00EDB791 /* ROAnnotation */;
+			targetProxy = 608B051A1809E66600EDB791 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		608B05171809E4BB00EDB791 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		608B05181809E4BB00EDB791 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ROAnnotationDemo_Prefix.pch;
+				INFOPLIST_FILE = "ROAnnotationDemo-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = ROAnnotationDemo;
+				SDKROOT = macosx;
+				SYMROOT = build;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ROAnnotationDemo_Prefix.pch;
+				INFOPLIST_FILE = "ROAnnotationDemo-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = ROAnnotationDemo;
+				SDKROOT = macosx;
+				SYMROOT = build;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SYMROOT = build;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = macosx;
+				SYMROOT = build;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		608B05161809E4BB00EDB791 /* Build configuration list for PBXAggregateTarget "ROAnnotation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				608B05171809E4BB00EDB791 /* Debug */,
+				608B05181809E4BB00EDB791 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "ROAnnotationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ROAnnotationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
