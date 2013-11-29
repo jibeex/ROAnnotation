@@ -1,18 +1,24 @@
-ROAnnotation
+ROAnnotation (Java style Runtime annotation for Objective-C)
 =============================================================
 
 
-Java-like Runtime annotation for Objective-C
+What is ROAnnotation
 -------------------------------------------------------------
-ROAnnotation supports adding customized class meta data as anotations with key value paring properties at Class/Property/Method for Objective-C. Those annotations can be retrieved at runtime of the application. Then you can do whatever you want with the annotation in your application.
+ROAnnotation is a compile time Class/Property/Method metadata parser and a set of toolkits that gives your application access to those metadata at runtime.
 
-Just like what we can do with annotation in Java.
+As Objective-C provides no supports for customized Class/Property/Method metadata, ROAnnotation uses formatted comments to store metadata.
+
+The metadata format defined by ROAnnotation is similar to Java style annotation. Each metadata unit consist of an annotation type and a set of key-value pairing attributes.
+
+```obj-c
+//@annotationType( attribute = attributeValue, attribute2 = "attribute value with spaces")
+```
 
 Origin
 -------------------------------------------------------------
-ROAnnotation is inspired by another objective-C annotaition project called ObjCAnnotate(https://bitbucket.org/dylanbruzenak/objectivecannotate/wiki/Home). What ObjCAnnotate is doing is parsing predefined annotations in the source files and generates new block of codes.
+ROAnnotation is inspired by another objective-C annotation project called ObjCAnnotate(https://bitbucket.org/dylanbruzenak/objectivecannotate/wiki/Home). What ObjCAnnotate is doing is parsing predefined annotations in the source files and generates new block of codes.
 
-Though ROAnnotation uses a similar annotation format with ObjCAnnotate, it is doing things in another direction. Instead of generating codes, ROAnnotation parses any customized annotitions(no need to define annotation) at class/method/property, collects and saves them as a file. Developer can then read annotation content from this file and do real cool stuff with them.
+Though ROAnnotation uses a similar annotation format with ObjCAnnotate, it is doing things in another direction. Instead of generating codes, ROAnnotation parses any customized annotations(no need to define annotation) at class/method/property, collects and saves them as a file. Developer can then read annotation content from this file and do real cool stuff with them.
 
 
 The executable ROAnnotation
@@ -83,7 +89,7 @@ Retrieve annotation (s)
 NSArray* classAnnotations = [ROAnnotation annotationsAtClass:[Person class]];
 NSArray* methodAnnotations = [ROAnnotation annotationsAtMethod:@"canDoSomethingAwesomeWith:andAThing:" ofClass:[Person class]];
 ROAnnotation* annotation = [ROAnnotation annotationOfType:@"methodAnnotationWithMultiLineMethodName" atMethod:@"reallyLongMethodName:andAnother:" ofClass:[Person class]];
-annotation = [ROAnnotation annotationOfType:@"PropertyAnnotationInInplementation" atProperty:@"privateName" ofClass:[Person class]];
+annotation = [ROAnnotation annotationOfType:@"PropertyAnnotationInImplementation" atProperty:@"privateName" ofClass:[Person class]];
 
 ```
 Read attribute values from annotation
@@ -140,7 +146,7 @@ Get Started
 
     git clone https://github.com/jibeex/ROAnnotation.git
     
-2.Copy the executable file ROAnnotation(from the root folder of this project) into your projecct
+2.Copy the executable file ROAnnotation(from the root folder of this project) into your project
 
 3.Include all files under folder Class/filesNeededForReadingAnnotationsOnly into your project
 
